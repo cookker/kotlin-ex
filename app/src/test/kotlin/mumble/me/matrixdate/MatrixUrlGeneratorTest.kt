@@ -7,7 +7,7 @@ internal class MatrixUrlGeneratorTest {
     @Test
     fun `something to do`() {
         MatrixUrlGenerator {
-            dailyPickedHHmm = "0750"
+            dailyPickedHHmm = "1800"
             count = 10
             about = 60
         }.build().onEach {

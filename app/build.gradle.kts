@@ -35,15 +35,21 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
+    implementation("io.projectreactor:reactor-core:3.4.14")
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    testImplementation("io.projectreactor:reactor-test")
+
+    testImplementation("io.projectreactor:reactor-test:3.1.0.RELEASE")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
 
     implementation("io.github.microutils:kotlin-logging-jvm:2.1.21")
     implementation("org.slf4j:slf4j-reload4j:1.7.35")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.6.0")
 }
 
 application {
